@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Signup</title>
+</head>
+<body>
+
+    <header>
+        <h1>Subscribe to Our Newsletter</h1>
+        <p>Get the latest updates and exclusive offers directly in your inbox!</p>
+    </header>
+
+    <hr>
+
+    <form action="/subscribe-handler" method="post">
+
+        <section>
+            <h2>Your Information</h2>
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required><br><br>
+            <label for="name">Your Name (Optional):</label><br>
+            <input type="text" id="name" name="name" placeholder="John Doe"><br><br>
+
+            <label for="country">Country/Region (Optional):</label><br>
+            <select id="country" name="country">
+                <option value="">-- Select --</option>
+                <option value="usa">United States</option>
+                <option value="can">Canada</option>
+                <option value="uk">United Kingdom</option>
+                <option value="oth">Other</option>
+            </select><br><br>
+
+        </section>
+
+        <section>
+            <h2>Preferences and Consent</h2>
+
+            <p>What kind of content are you interested in?</p>
+            <input type="checkbox" id="updates" name="preferences" value="updates" checked>
+            <label for="updates">Product Updates</label><br>
+            
+            <input type="checkbox" id="deals" name="preferences" value="deals">
+            <label for="deals">Special Offers & Deals</label><br>
+            
+            <input type="checkbox" id="tutorials" name="preferences" value="tutorials">
+            <label for="tutorials">Tutorials & Tips</label><br><br>
+
+            <input type="checkbox" id="consent" name="consent" required>
+            <label for="consent">I agree to the <a href="/terms" target="_blank">Terms and Conditions</a>.</label><br><br>
+            </section>
+
+        <hr>
+
+        <button type="submit">Subscribe Now</button>
+
+    </form>
+
+    <footer>
+        <p>You can unsubscribe at any time.</p>
+    </footer>
+
+</body>
+</html>
